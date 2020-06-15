@@ -105,8 +105,9 @@ class Plot {
         for(let x = (-width/2 + this.pos.getX());
                 x < (width/2 + this.pos.getX());
                 x += this.functionResolution) {
+            let y = f(x / this.scale.getX()) * this.scale.getY();
             
-            vertex(x, f(x / this.scale.getX()) * this.scale.getY());
+            vertex(x, y);
         }
         endShape();
     }
