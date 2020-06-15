@@ -1,11 +1,13 @@
 function mouseDragged() {
 	UI.mouseDragged();
 	Drag.mouseDragged();
+	plot.mouseDragged();
 }
 
 function mousePressed() {
 	UI.mousePressed();
 	Drag.mousePressed();
+	plot.mousePressed();
 }
 
 function mouseClicked() {
@@ -20,6 +22,7 @@ function mouseReleased() {
 
 function mouseWheel(event) {
 	UI.mouseWheel(event);
+	plot.mouseWheel(event);
 }
 
 function keyPressed() {
@@ -29,4 +32,5 @@ function keyPressed() {
 function keyTyped() {
 	UI.keyTyped();
 }
+
 
