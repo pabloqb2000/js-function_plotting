@@ -29,6 +29,7 @@ function draw() {
 	scale(1,-1);
 
 	// Draw plot
+	plot.update();
 	plot.draw();
 	pop();
 
